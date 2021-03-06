@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  
+  <style>
+    
+    .c3{
+      position: relative;
+      width: 100%;
+      border-bottom: solid 2px lightgray;
+      margin-left: 10px;
+
+}
+    
+    ul {
+        height:auto;
+        width:200px;
+      list-style-type: none;
+     border:none;
+    }
+    
+    .button{
+          display: flex;
+    justify-content: space-between;
+     border:none;
+        height: 50px;
+      width:100%;
+      background-color: white;
+      
+    }
+    .button:hover{
+      background-color: rgb(238, 238, 238);
+    }
+    .button:active{
+      border:none;
+      background-color:rgb(238, 238, 238) ;
+    }
+    .button:focus{
+      outline: unset;
+    }
+
+    .circle{
+      border:solid 1px green ;
+    }
+    .menu-container {
+      display: flex;
+    }
+    .margin-top-17 {
+      margin-top: 17px;
+    }
+    .float-left {
+      float: left;
+    }
+    .disp{
+      display: flex;
+      justify-content: space-between;
+    }
+    .margin-imgs{
+      margin: 0 5px;
+      border-radius: 7px;
+    }
+    .menu3-margin{
+      margin: 17px;
+    }
+    .up-title{
+      padding: 0;
+    margin: 5px 0 5px 40px;
+    border-bottom: solid 2px lightgrey;
+    }
+    .margin-top-5 {
+      margin-top: 5px;
+    }
+    #pet-select{
+          margin: 13px;
+    padding: 3px;
+    padding-right: 25px;
+    border-radius: 5px;
+    border: solid 1px lightgray;
+    }
+    .buttons-style{
+      float: left;
+    display: flex;
+    flex-direction: column;
+    }
+    .last-button{
+          width: 100px;
+          margin: 0 0 0 13px;
+          background-color: lime;
+          border:solid 1px lightgray;
+          border-radius: 3px ;
+          color: white;
+          padding: 3px 7px;
+    }
+    .main-container{
+      height: 300px;
+    float: left;
+    width: 80vw;
+
+    }
+    .hide{
+      display: none;
+    }
+    </style>
+  <body>
+    <script>
+
+       let ch = "MM1";
+  function myFunction5() {
+    if(!(ch=="MM1")){
+
+    
+    document.getElementById("MM1").classList.remove('hide');
+    document.getElementById(ch).classList.add('hide');
+    ch = "MM1";
+    }
+  }
+      function myFunction() {
+       if (!(ch == "MM2")){
+        document.getElementById("MM2").classList.remove('hide');
+        document.getElementById(ch).classList.add('hide');
+        ch="MM2";
+       }
+      }
+      function myFunction1() {
+       if (!(ch == "MM3")){
+        document.getElementById("MM3").classList.remove('hide');
+        document.getElementById(ch).classList.add('hide');
+        ch = "MM3";
+      }}
+
+      function myFunction2() {
+       if (!(ch == "MM4")){
+          document.getElementById("MM4").classList.remove('hide');
+          document.getElementById(ch).classList.add('hide');
+        ch = "MM4";
+       }
+        }
+        function myFunction3() {
+            if (!(ch == "MM5")){
+            document.getElementById("MM5").classList.remove('hide');
+            document.getElementById(ch).classList.add('hide');
+          ch = "MM5";
+          }
+        }
+          function myFunction4() {
+           if (!(ch == "MM6")){
+              document.getElementById("MM6").classList.remove('hide');
+              document.getElementById(ch).classList.add('hide');
+            ch = "MM6";
+            }
+          }
+            
+    </script>
+    <h3 class="up-title">Psudo US</h3>
+    <ul  class="float-left margin-top-5">
+      <li> 
+        <button id="m1" onclick="myFunction5()" class ="button">
+          <div class="menu-container">
+          <h4>Menu 1</h4>
+            <svg height="16" width="16" class="margin-top-17" >
+              <circle class ="circle" cx="10" cy="10" r="4" stroke="green" stroke-width="4" fill="green" />
+            </svg>
+          </div>
+        <a id="img" href="#c1"><img src="project1/dhiaa work/out.png" alt="link" class="margin-top-17"></a></button>
+      </li>
+      <li><button id="m2" onclick="myFunction()" class ="button"><h4>Menu 2</h4><a href=""><img class="margin-top-17" src="project1/dhiaa work/out.png" alt="link"></a></button></li>
+      <li><button id="m3" onclick="myFunction1()" class ="button"><h4>Menu 3</h4><a href="#c3"><img class="margin-top-17" src="project1/dhiaa work/out.png" alt="link"></a></button></li>
+      <li><button id="m4" onclick="myFunction2()" class ="button"><h4>Menu 4</h4></button></li>
+      <li><button id="m5" onclick="myFunction3()" class ="button"><h4>Menu 5</h4></button></li>
+      <li><button id="m6" onclick="myFunction4()" class ="button">
+        <div class="menu-container">
+        <h4>Menu 6</h4>
+        <svg width="16" height="16" class="margin-top-17">
+        <circle class ="circle" cx="10" cy="10" r="4" stroke="red" stroke-width="4" fill="red" />
+        </svg>
+      </div>
+      </button>
+      </li>
+    </ul>
+    <div id="MM1" class="main-container">
+<div class="c3 float-left margin-top-5 disp">
+    <h3 class="menu3-margin">Menu 1</h3>
+    <div class="margin-top-17">
+    <img class="margin-imgs" src="project1/dhiaa work/github.png" alt="github"> 
+    <img class="margin-imgs" src="project1/dhiaa work/empty.png" alt="empty">
+    <img class="margin-imgs" src="project1/dhiaa work/coding.png" alt="coding">
+    <img class="margin-imgs" src="project1/dhiaa work/eye.png" alt="eye">
+    </div>
+</div>
+<div class="buttons-style">
+    <select id="pet-select">
+      <option value="">JSON</option>
+      <option value="option 1">option 1</option>
+      <option value="option 2">option 2</option>
+      <option value="option 3">option 3</option>
+    </select>
+    
+    <button class="last-button" type="button">Add item</button>
+</div>
+</div>
+  <div id="MM2" class="main-container hide">
+    <div class="c3 float-left margin-top-5 disp ">
+      <h3 class="menu3-margin">Menu 2</h3>
+      <div class="margin-top-17">
+        <img class="margin-imgs" src="project1/dhiaa work/github.png" alt="github">
+        <img class="margin-imgs" src="project1/dhiaa work/empty.png" alt="empty">
+        <img class="margin-imgs" src="project1/dhiaa work/coding.png" alt="coding">
+        <img class="margin-imgs" src="project1/dhiaa work/eye.png" alt="eye">
+      </div>
+    </div>
+    <div class="buttons-style">
+      <select id="pet-select">
+        <option value="">JSON</option>
+        <option value="option 1">option 1</option>
+        <option value="option 2">option 2</option>
+        <option value="option 3">option 3</option>
+      </select>
+  
+      <button class="last-button" type="button">Add item</button>
+    </div>
+  </div>
+  <div id="MM3" class="main-container hide">
+    <div  class="c3 float-left margin-top-5 disp">
+      <h3 class="menu3-margin">Menu 3</h3>
+      <div class="margin-top-17">
+        <img class="margin-imgs" src="project1/dhiaa work/github.png" alt="github">
+        <img class="margin-imgs" src="project1/dhiaa work/empty.png" alt="empty">
+        <img class="margin-imgs" src="project1/dhiaa work/coding.png" alt="coding">
+        <img class="margin-imgs" src="project1/dhiaa work/eye.png" alt="eye">
+      </div>
+    </div>
+    <div class="buttons-style">
+      <select id="pet-select">
+        <option value="">JSON</option>
+        <option value="option 1">option 1</option>
+        <option value="option 2">option 2</option>
+        <option value="option 3">option 3</option>
+      </select>
+  
+      <button class="last-button" type="button">Add item</button>
+    </div>
+  </div>
+  <div id="MM4" class="main-container hide">
+    <div class="c3 float-left margin-top-5 disp">
+      <h3 class="menu3-margin">Menu 4</h3>
+      <div class="margin-top-17">
+        <img class="margin-imgs" src="project1/dhiaa work/github.png" alt="github">
+        <img class="margin-imgs" src="project1/dhiaa work/empty.png" alt="empty">
+        <img class="margin-imgs" src="project1/dhiaa work/coding.png" alt="coding">
+        <img class="margin-imgs" src="project1/dhiaa work/eye.png" alt="eye">
+      </div>
+    </div>
+    <div class="buttons-style">
+      <select id="pet-select">
+        <option value="">JSON</option>
+        <option value="option 1">option 1</option>
+        <option value="option 2">option 2</option>
+        <option value="option 3">option 3</option>
+      </select>
+  
+      <button class="last-button" type="button">Add item</button>
+    </div>
+  </div>
+  <div id="MM5" class="main-container hide">
+    <div class="c3 float-left margin-top-5 disp">
+      <h3 class="menu3-margin">Menu 5</h3>
+      <div class="margin-top-17">
+        <img class="margin-imgs" src="project1/dhiaa work/github.png" alt="github">
+        <img class="margin-imgs" src="project1/dhiaa work/empty.png" alt="empty">
+        <img class="margin-imgs" src="project1/dhiaa work/coding.png" alt="coding">
+        <img class="margin-imgs" src="project1/dhiaa work/eye.png" alt="eye">
+      </div>
+    </div>
+    <div class="buttons-style">
+      <select id="pet-select">
+        <option value="">JSON</option>
+        <option value="option 1">option 1</option>
+        <option value="option 2">option 2</option>
+        <option value="option 3">option 3</option>
+      </select>
+  
+      <button class="last-button" type="button">Add item</button>
+    </div>
+  </div>
+  <div id="MM6" class="main-container hide">
+    <div  class="c3 float-left margin-top-5 disp">
+      <h3 class="menu3-margin">Menu 6</h3>
+      <div class="margin-top-17">
+        <img class="margin-imgs" src="project1/dhiaa work/github.png" alt="github">
+        <img class="margin-imgs" src="project1/dhiaa work/empty.png" alt="empty">
+        <img class="margin-imgs" src="project1/dhiaa work/coding.png" alt="coding">
+        <img class="margin-imgs" src="project1/dhiaa work/eye.png" alt="eye">
+      </div>
+    </div>
+    <div class="buttons-style">
+      <select id="pet-select">
+        <option value="">JSON</option>
+        <option value="option 1">option 1</option>
+        <option value="option 2">option 2</option>
+        <option value="option 3">option 3</option>
+      </select>
+  
+      <button class="last-button" type="button">Add item</button>
+    </div>
+  </div>
+  <p id="demo"></p>
+  </body>
+</html>
